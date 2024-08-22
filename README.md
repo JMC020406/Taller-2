@@ -116,6 +116,10 @@ if __name__ == "__main__":
 print(resultado)
 
 ```
+Como el título lo explica el problema es si don números pareciera que son uno el real y el otra la afectación de este en un espejo. EJ: 69 | 96
+
+La solución a este problema era bastante sencillo ya que lo único que se tenía que hacer era los mismo que en los anteriores puntos con respecto a la parte entera. Siendo así lo que hicimos fue ingresar dos numeros por teclado y luego pasarlos a listas con el método ya antes usado. Luego una de estas listas se reorganiza con slicing [::-1] para poder compararla con la otra. Si ambas listas terminaron siendo iguales eso significa que los números en efecto son números espejo.
+
 ### Punto 4 / Calcule a partir de la sumatoria de Taylor una aproximación a Coseno.
 ```py
 
