@@ -71,6 +71,16 @@ if __name__ == "__main__":
 print(f"Los dígitos del número {n} son {resultado}")    # Nota: Las aproximaciones que hace el sistema a los dígitos decimales hace que el programa funcione por más tiempo del que se requiere
 
 ```
+El proceso para el punto dos fue bastante similar al previo, ya que se uso lo mismo para encontrar los dígitos de la parte entera, pero para la parte decimal se uso otro procedimiento. Primero se separo la parte entera de la decimal, luego la entera se descompuso con el método usado en el primer punto, y luego los decimales pasaron por el siguiente proceso:
+
+Para poder sacar el primer decimal se multiplicaba por 10, así estos valores se moverian a la izquierda, haciendo que fueran posibles de acceder a partir de la división entera (//) y luego ser indexados en una lista distina a la usada con los enteros. Luego se repite este procedimiento hasta que los decimales sean iguales a 0. 
+
+Una vez armadas ambas listas estas se concatenan siendo A[::-1] (invertida) y B (normal), B no se tuvo que reorganizar ya que el órden en el que se iban indexando sus dígitos era el correcto.
+
+Ya para finalizar solo se imprimia la unión de las dos listas y se comparaba con el número original, al igual que se hacía en el punto 1.
+
+Nota: En la parte decimal pasan cosas extrañas por la aproximación de la computadora. Literalmente aparecen valores de la nada.
+
 ### Punto 3 / ¿Son números espejo?
 ```py
 
