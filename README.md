@@ -30,7 +30,9 @@ if __name__ == "__main__" :
 print(f"Los dígitos que componen a {n} son {digitos}")
 
 ```
-Para este punto empezamos por ingresar un número entero por teclado, luego  a partir de calculos de módulo (%) y división entera (//) empezamos a sacar las unidades del número e indexarlas en una lista la cual llamamos A. Con eso fuimos sacando los dígitos, es decir que lo cálculamos repetidas veces aplicando un ciclo while, el cual sesaba cuando el residuo de la división entera fuera 0. Todos esos dígitos indexados en A estaban en sentido contrario, entonces para reorganizarlos de la misma manera en la que venian en el número original se aplico slicing de la siguiente forma [::-1], lo cual permite invertir el orden de los elementos en una lista.
+Para este punto empezamos por ingresar un número entero por teclado, luego  a partir de calculos de módulo (%) y división entera (//) empezamos a sacar las unidades del número e indexarlas en una lista la cual llamamos A. Con eso fuimos sacando los dígitos, es decir que lo cálculamos repetidas veces aplicando un ciclo while, el cual sesaba cuando el residuo de la división entera fuera 0. 
+
+Todos esos dígitos indexados en A estaban en sentido contrario, entonces para reorganizarlos de la misma manera en la que venian en el número original se aplico slicing de la siguiente forma [::-1], lo cual permite invertir el orden de los elementos en una lista.
 
 Así lo único que faltaba era imprimir la lista y demostrar que esta contenía todos los dígitos del número ingresado por teclado.
 
