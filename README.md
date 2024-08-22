@@ -157,6 +157,14 @@ porcentaje = (valor_aprox * 100)/math.cos(x) - 100      # Comparación de que ta
 print (f"Con 86 iteraciones la aproximación es {valor_aprox}, mientras que el valor real es {valor_aprox}. Eso quiere decir que hay una diferencia porcentual de {porcentaje}")
 
 ```
+Este punto fue retador ya que nos exigio interpretar una sumatoria matemática un tanto confusa al lenguaje de python.
+![image](https://github.com/user-attachments/assets/b5ca4f30-3113-4813-95a0-8ae9240694c2)
+La sumatoria de Taylor es una forma de aproximación a algun valor a partir de una sumatoria, en este caso fue Coseno.
+
+Primero definimos por teclado el valor de x para luego ser seguido por el calculo del factorial de 2 por la cantidad de iteraciones hechas, luego el sencillo calculo de la potencia de x elevada a la 2 por iteraciones y para finalizar elevamos -1 a la iteración. Todos estos valores estan dentro de una sumatoria lo que quiere decir que se necesita ir sumando el valor de cada iteración con el previo lo cual lo hace un poco complejo. AL final solo se tuvo que definir el valor inicial del coseno el cual era 0 y en la primera iteración ya se convertia en 1 y así.
+
+En cuanto a como funcionan la aproximación diriamos que funciona bien y la unica razón por la que se ve limitada es porque el sistema no puede llegar a cargar con tanta información que surgue d estos cálculos.
+
 ### Punto 5 / Hallar el Mínimo Común Múltiplo con metodos recursivos y iterativos.
 #### 5.1 / Método recursivo.
 ```py
