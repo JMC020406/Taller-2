@@ -238,6 +238,13 @@ else:                                                                           
     print (f"Las listas A = {A} y B = {B} no tienen elementos repetidos")
 
 ```
+Para este punto lo que hicimos fue construir dos listas las cuales se van a comparar, en este caso las listas A y B, las cuales tendrán c cantidad de elementos.
+
+Luego una vez se hayan definido las listas se aplicara la función en la cual va a pasar cada elemento de A a ser comparado con aquellos que se encuentren en B; si encuentra alguna igualdad entre estos ya se va a tomar que la propiedad se cumple entonces la comparación es True.
+Si no se encuentra nada entonces la comparación se quedara con el valor de False.
+
+Para terminar dependiendo de con que valor ha terminado la comparación se imprimira un texto distinto. 
+
 ### Punto 7 / Imprima de una lista aquellas cadenas las cuales tengan 2 o más vocales.
 ```py
 
@@ -266,6 +273,14 @@ resultado = buscar_cadena_con_vocales(lista_cadenas)
 print(resultado)
 
 ```
+Encontrar una cadena la cual contubiera dos vocales fue algo de cierta manera complicado.
+
+Primero definimos la lista de las cadenas las cuales ibamos a pasar por el programa para solucionar este problema. Luego ya definimos las funciones, siendo la primera de esta para contar la cantidad de vocales que hay en una cadena; usamos el código ASCII para hacer el salto de cadena a número lo cual ahorra el momento de comparar que valor tiene cada cosa y cada vez que esta propiedad se cumplia un contador aumentaba en 1; si este llegaba a dos el ciclo de la siguiente función se termina.
+
+En cuanto a la otra función se tiene que se van a tomar todos las cadenas para ser aplicadas a la función previamente explicada, y claro que, si esa se cumple ya se puede terminar el ciclo de busqueda en la lista de cadenas.
+
+Esto finaliza con imprimir la palabra la cual contiene dos vocales en ella.
+
 ### Punto 8 / Haga una lista de los elementos existenetes en la primera lista y ausentes en la segunda.
 ```py
 
@@ -298,6 +313,14 @@ elementos_ausentes = elementos_de_a_ausentes_en_b (A, B, c)
 print (f"Los elementos que estan en A = {A} y no en B = {B}, son C = {elementos_ausentes}")
 
 ```
+De forma graciosa se podría decir que este programa es un conjunto de reciclaje de las otros punto, ya que contiene unas cuantas estructuras usadas previamente en otros puntos. Aun así es funcional, está bien definida y organizada.
+
+El problema es comparar dos listas para saber que elementos hay en la primera lista que la segunda no, y estos elementos que cumplen la propiedad ser pasados a una nueva lista de salida. Entonces tenemos a las listas A, B y C las cuales fueron designadas de la siguiente manera: A (principal, B (Comparativa) y C (Resultados).
+
+Una vez se hayan definido las listas A y B hay que comparar los elementos que contiene A y que también esten en B, como se hizo en el punto 6. Entonces si esta comparativa es True no se hace nada, se continua con el siguiente elemento que contenga A, pero si la comparativa es False entonces se hace lo siguiente: se toma ese elemento y se indexa a la lista C, para luego continuar con el siguiente elemento contenido en la lista A.
+
+Y como siempre para finalizar toca demostrar como es está relación de los elementos que contiene cada lista, tanto A como B como C.
+
 ### Punto 9 / Haga los cálculos del punto 7 del Taller 1 con un vector.
 ```py
 
@@ -361,6 +384,7 @@ print(f"La raíz cúbica del menor número es: {menor_raiz_cubica}")
 ```
 ### Punto 10 / Saque lo numeros divisibles por tres de un vector cualquiera (use la propiedad de divisivilidad del 3).
 ```py
+
 
 
 ```
