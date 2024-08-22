@@ -200,8 +200,9 @@ if __name__ == "__main__":
     b = int(input("Ingrese el segundo número: "))
 
 print(f"El MCM de {a} y {b} es: {mcm_iterativo(a, b)}")
-
 ```
+Para este ejercicio empleamos el Algoritmo de Euclides para hallar el MCD de los números ingresados, y estableciendo una relación entre el MCD y el MCM. Por lo que empezamos evaluando el Maximo Comun Divisor de los números ingresados por el usuario, posteriormente procedemos a evaluar el Minimo Comun Multiplo en base al resultado obtenido en el primer paso, obteniendo asi el resultado del minimo comun multiplo utilizando el Algoritmo de Euclides. Se realiza este proceso mediante el método recursivo y el método iterativo.
+
 ### Punto 6 / Confirme si hay algun elemento en alguna de las dos listas que se repita en la otra.
 ```py
 
@@ -382,9 +383,27 @@ print(f"La potencia del mayor número elevado al menor número es: {potencia}")
 print(f"La raíz cúbica del menor número es: {menor_raiz_cubica}")
 
 ```
+Para realizar este ejercicio teníamos una base de como hacerlo ya que se había realizado en el taller 1 sin embargo para este ejercicio debemos implementar vectores. Por lo que en resumen para los 5 puntos que debíamos resolver se implementan interpretan los números ingresados como listas y posteriormente procedemos a realizar los pasos para resolver cada punto del ejercicio mediante el uso de funciones. Posteriormente procedemos a imprimir cada resultado de los puntos realizados.
+
 ### Punto 10 / Saque lo numeros divisibles por tres de un vector cualquiera (use la propiedad de divisivilidad del 3).
 ```py
+def es_multiplo_de_3(numero):
+    # Suma de los dígitos del número
+    suma_digitos = sum(int(digito) for digito in str(abs(numero)))
+    # Un número es múltiplo de 3 si la suma de sus dígitos es múltiplo de 3
+    return suma_digitos in {0, 3, 6, 9}
 
+def obtener_multiplos_de_3(lista):
+    multiplos_de_3 = [num for num in lista if es_multiplo_de_3(num)]
+    return multiplos_de_3
 
+def ingresar_lista():
+    lista = list(map(int, input("Ingrese los números enteros separados por espacios: ").split()))
+    return lista
 
+Ejemplo de uso
+lista = ingresar_lista()
+multiplos_de_3 = obtener_multiplos_de_3(lista)
+print("Los múltiplos de 3 son:", multiplos_de_3)
 ```
+Primero realizamos el programa utilizando el operador módulo (%), sin embargo la idea era hacerlo sin utilizar este operador por lo que se planteó según recomendación del profesor usar la propiedad de divisibilidad del número 3. Donde primero realizamos una suma de los dígitos que componen el número, y evaluar si el resultado de la suma nos da números que sean múltiplo de 3, teniendo esto en cuenta, evaluamos si el número ingresado es múltiplo de 3. Y le pedimos al usuario que ingrese una serie de números, los evaluamos como una lista y le decimos al usuario cuales de los números ingresados son múltiplos de 3.
