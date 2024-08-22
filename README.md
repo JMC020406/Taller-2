@@ -362,4 +362,5 @@ print(f"La raíz cúbica del menor número es: {menor_raiz_cubica}")
 ### Punto 10 / Saque lo numeros divisibles por tres de un vector cualquiera (use la propiedad de divisivilidad del 3).
 ```py
 
+
 ```
